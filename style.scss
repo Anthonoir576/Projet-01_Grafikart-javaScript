@@ -1,11 +1,57 @@
-html, body {
 
-    background-color: black;
-    overflow-x: hidden;
+// margin reset
+* {
 
     margin: 0;
 
+}
+
+// border box
+html, body {
+
     box-sizing: border-box;
+
+}
+
+// overflox, flex, font
+body {
+
+    overflow-y: hidden;
+
+    display: flex;
+
+    color: white;
+    font-family: 'Cinzel', serif;
+
+}
+
+// header
+header {
+
+    background-image: url('source/image/got.jpg');
+    margin: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+}
+
+h1 {
+
+    color: white;
+    text-align: center;
+
+    text-shadow: 0 10px 15px rgba(255, 255, 255, 0.473);
+
+    font-size: 5rem;
+
+    margin-top: 1em;
+
+    border-bottom: 4px solid white;
+    border-top: 2px solid white;
+    box-shadow: 0 0 15px 2px rgba(255, 255, 255, 0.473);
+
+    width: 100vw;
 
 }
 
