@@ -12,11 +12,11 @@
     }
     ::-webkit-scrollbar-thumb{
     background: linear-gradient(13deg, #000000 14%,#000000 64%);
-    border: 1.9px solid #FFFFFF;
+    border: 0.1px solid #FFFFFF;
     border-radius: 30px;
     }
     ::-webkit-scrollbar-thumb:hover{
-    background: linear-gradient(13deg, #FFFFFF 6%,#FFFFFF 64%);
+    background: linear-gradient(13deg, #bebebe 6%,#949494 64%);
     }
     ::-webkit-scrollbar-track{
     background: #FFFFFF;
@@ -65,7 +65,7 @@ header {
         & h3 {
 
             margin-left: 1em;
-            margin-bottom: 3em;
+            margin-bottom: 0em;
             padding: 5px 0;
             font-size: 2rem;
 
@@ -117,6 +117,84 @@ h1 {
 
 }
 
+.div--arrow {
+
+    display: flex;
+    justify-content: flex-end;
+
+    margin: 0;
+
+}
+
+.arrow {
+
+    width: 100px;
+    height: auto;
+
+    position: relative;
+    top: -50px;
+
+}
+
+.bounce {
+    -webkit-animation-name: bounce;
+    animation-name: bounce;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    }
+    40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(-30px, 0, 0);
+    transform: translate3d(-30px ,0, 0);
+    }
+    70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(-15px, 0, 0);
+    transform: translate3d(-15px, 0, 0);
+    }
+    90% {
+    -webkit-transform: translate3d(-4px, 0,0);
+    transform: translate3d(-4px, 0,0);
+    }
+    }
+    
+    @keyframes bounce {
+    0%, 20%, 53%, 80%, 100% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transition-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    }
+    40%, 43% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(-30px, 0, 0);
+    transform: translate3d(-30px, 0, 0);
+    }
+    70% {
+    -webkit-transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transition-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    -webkit-transform: translate3d(-15px, 0, 0);
+    transform: translate3d(-15px, 0, 0);
+    }
+    90% { -webkit-transform: translate3d(-4px, 0, 0); transform: translate3d(-4px, 0, 0);
+    }
+    } 
+
 // ************* SECTION 02 ****************
 
 main{
@@ -131,6 +209,12 @@ main{
     & div {
 
         margin-top: 10em;
+
+        & h2 {
+
+            background-color: rgb(0, 0, 0, .9);
+
+        }
 
         & h3 {
 
@@ -148,7 +232,7 @@ main{
             border-top: 2px solid white;
             box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.473);
             
-
+            background-color: rgb(0, 0, 0, .1);
             width: 10vw;
 
         }
@@ -229,15 +313,20 @@ footer {
 
         .Rsociaux {
 
-            width: 30vw;
+            width: 95vw;
             margin: 0;
 
-            
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: flex-end;
 
             & img {
 
-                width: 50px;
-                height: 50px;
+                width: 80px;
+                height: 80px;
+
+                margin-bottom: 1em;
 
                 border-radius: 20%;
 
@@ -245,10 +334,12 @@ footer {
 
             & .img--modifier {
 
-                width: 60px;
-                height: 60px;
+                width: 95px;
+                height: 95px;
 
-                padding-top: 10px;
+                position: relative;
+                left: 8px;
+                top: -8px;
 
             }
 
@@ -264,5 +355,30 @@ footer {
     flex-direction: row;
 
     width: 100vw;
+
+}
+
+.img:hover {
+
+
+    transform: scale(1.1);
+    box-shadow: 0 0 10px 2px white;
+
+
+}
+
+
+hr {
+
+    opacity: .3;
+    height: 0.5px;
+
+}
+
+.footer {
+
+    opacity: 0.5;
+    text-align: center;
+    margin: 10px 0 0 0;
 
 }
