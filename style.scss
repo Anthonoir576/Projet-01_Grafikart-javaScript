@@ -46,7 +46,7 @@ html, body {
 // overflox, flex, font
 body {
 
-    overflow-y: hidden!important;
+    overflow-y: hidden;
 
     color: white;
     font-family: 'Cinzel', serif;
@@ -71,6 +71,8 @@ header {
     width: 100vw;
     height: 100vh;
 
+ 
+
     & div {
 
         margin-top: 10em;
@@ -80,7 +82,9 @@ header {
             margin-left: 1em;
             margin-bottom: 0em;
             padding: 5px 0;
-            font-size: 2rem;
+            font-size: 2vw;
+                
+            white-space: nowrap;    
 
             text-align: center;
 
@@ -145,7 +149,7 @@ h1 {
     height: auto;
 
     position: relative;
-    top: -50px;
+    top: -85px;
 
 }
 
@@ -232,9 +236,9 @@ main {
         & h3 {
 
             margin-left: 1em;
-            margin-bottom: 3em;
+            margin-bottom: 0em;
             padding: 5px 0;
-            font-size: 2rem;
+            font-size: 2vw;
 
             text-align: center;
 
@@ -246,7 +250,7 @@ main {
             box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.473);
             
             background-color: rgb(0, 0, 0, .1);
-            width: 10vw;
+            width: 15vw;
 
         }
 
@@ -308,7 +312,7 @@ footer {
             margin-left: 1em;
             margin-bottom: 3em;
             padding: 5px 0;
-            font-size: 2rem;
+            font-size: 2vw;
 
             text-align: center;
 
@@ -320,14 +324,14 @@ footer {
             box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.473);
             
 
-            width: 15vw;
+            width: 18vw;
 
         }
 
         .Rsociaux {
 
             width: 95vw;
-            margin: 0;
+            margin: 0 0 50px 0;
 
             display: flex;
             flex-direction: column;
@@ -393,5 +397,15 @@ hr {
     opacity: 0.5;
     text-align: center;
     margin: 10px 0 0 0;
+    position: relative;
+    bottom: 0;
 
+}
+
+.content--txt {
+
+    margin: 0;
+    max-height: 350px;
+
+    overflow-y:scroll!important;
 }
