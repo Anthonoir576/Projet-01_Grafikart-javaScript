@@ -411,19 +411,8 @@ hr {
 }
 
 // ************* SECTION POUR JAVASCRIPT ****************
+
 // SPOILER ANIMATION 
-
-.spoiler-content {
-
-    display: inline-block;
-    width: 0;
-    height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: opacity .5s;
-
-}
-
 button {
 
     font-family: 'Cinzel', serif;
@@ -436,8 +425,19 @@ button {
     }
 }
 
+.spoiler-content {
+
+    display: inline-block;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: opacity .5s;
+
+}
 
 
+// au click 
 .visible {
 
     display: inline;
@@ -447,6 +447,7 @@ button {
     height: auto;
     opacity: 1;
     
+    text-shadow: 0 1px 10px white;
 
 }
 

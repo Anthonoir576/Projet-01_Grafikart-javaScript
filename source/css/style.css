@@ -274,6 +274,14 @@ hr {
   overflow-y: scroll !important;
 }
 
+button {
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+}
+button:hover {
+  box-shadow: 0 0 10px 1px white;
+}
+
 .spoiler-content {
   display: inline-block;
   width: 0;
@@ -283,14 +291,6 @@ hr {
   transition: opacity 0.5s;
 }
 
-button {
-  font-family: "Cinzel", serif;
-  font-weight: 600;
-}
-button:hover {
-  box-shadow: 0 0 10px 1px white;
-}
-
 .visible {
   display: inline;
   text-decoration: underline;
@@ -298,6 +298,7 @@ button:hover {
   width: auto;
   height: auto;
   opacity: 1;
+  text-shadow: 0 1px 10px white;
 }
 
 .invisible {

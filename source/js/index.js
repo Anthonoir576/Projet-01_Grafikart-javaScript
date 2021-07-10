@@ -1,5 +1,7 @@
 // systeme de spoiler
 
+// la fonction va crée a partir d'une span avec ca class, de crée automatiquement un bouton, et une autre span, avec le texte d'origine, et agir d'une certaine facon au click pour affiché la span, et supprimer le bouton, ou le masqué
+
 (function() { 
 
     let elements = document.querySelectorAll('.spoiler-content-multi');
