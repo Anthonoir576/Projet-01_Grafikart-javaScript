@@ -80,7 +80,9 @@ header {
             margin-left: 1em;
             margin-bottom: 0em;
             padding: 5px 0;
-            font-size: 2rem;
+            font-size: 2vw;
+                
+            white-space: nowrap;    
 
             text-align: center;
 
@@ -234,7 +236,7 @@ main {
             margin-left: 1em;
             margin-bottom: 3em;
             padding: 5px 0;
-            font-size: 2rem;
+            font-size: 2vw;
 
             text-align: center;
 
@@ -246,7 +248,7 @@ main {
             box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.473);
             
             background-color: rgb(0, 0, 0, .1);
-            width: 10vw;
+            width: 15vw;
 
         }
 
@@ -308,7 +310,7 @@ footer {
             margin-left: 1em;
             margin-bottom: 3em;
             padding: 5px 0;
-            font-size: 2rem;
+            font-size: 2vw;
 
             text-align: center;
 
@@ -320,7 +322,7 @@ footer {
             box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.473);
             
 
-            width: 15vw;
+            width: 18vw;
 
         }
 
