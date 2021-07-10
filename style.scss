@@ -6,23 +6,34 @@
 
 }
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
+
     width: 6px;
     height: 6px;
-    }
-    ::-webkit-scrollbar-thumb{
+
+}
+
+::-webkit-scrollbar-thumb {
+
     background: linear-gradient(13deg, #000000 14%,#000000 64%);
     border: 0.1px solid #FFFFFF;
     border-radius: 30px;
-    }
-    ::-webkit-scrollbar-thumb:hover{
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    
     background: linear-gradient(13deg, #bebebe 6%,#949494 64%);
-    }
-    ::-webkit-scrollbar-track{
+
+}
+
+::-webkit-scrollbar-track {
+
     background: #FFFFFF;
     border-radius: 10px;
     box-shadow: inset 7px 10px 12px 0px #F0F0F0;
-    }
+
+}
 
 
 // border box
@@ -35,7 +46,7 @@ html, body {
 // overflox, flex, font
 body {
 
-    overflow-y: hidden;
+    overflow-y: hidden!important;
 
     color: white;
     font-family: 'Cinzel', serif;
@@ -47,6 +58,8 @@ body {
     display: flex;
 
 }
+
+
 
 // ************* SECTION 01 ****************
 // header
@@ -197,7 +210,7 @@ h1 {
 
 // ************* SECTION 02 ****************
 
-main{
+main {
 
 
     background-image: url('source/image/got2.jpg');
